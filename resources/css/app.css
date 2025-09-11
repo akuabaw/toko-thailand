@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .pixel-border {
+    @apply border-2 border-black;
+    image-rendering: pixelated;
+  }
+  
+  .pixel-text {
+    @apply font-['Press_Start_2P'] text-sm;
+  }
+  
+  .product-card {
+    @apply bg-white pixel-border p-4 rounded hover:shadow-lg transition-all;
+  }
+  
+  .btn-accent {
+    @apply bg-[#FF7043] text-white px-4 py-2 rounded hover:bg-[#FF7043]/90 transition-colors pixel-text;
+  }
+}
